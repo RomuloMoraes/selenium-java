@@ -1,6 +1,7 @@
 package ordertests;
 
 import base.BasePage;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -8,7 +9,6 @@ import org.testng.annotations.Test;
 import pages.*;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 public class OrderCompleteTest extends BasePage {
 
@@ -54,6 +54,13 @@ public class OrderCompleteTest extends BasePage {
         shoppingCart.getPromoAddBtn().click();
         shoppingCart.getProceedCheckoutBtn().click();
 
+        OrderFormPersInfo persInfo = new OrderFormPersInfo(driver);
+        persInfo.getGenderMr().click();
+        persInfo.getFirstNameField().sendKeys("Fulano");
+        persInfo.getLastnameField().sendKeys("De Tal");
+        persInfo.getEmailField().sendKeys("fuladodetal@email.com");
+        persInfo.getTermsConditionsCheckbox().click();
+        persInfo.getContinueBtn().click();
 
     }
 
