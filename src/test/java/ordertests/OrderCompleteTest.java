@@ -62,6 +62,15 @@ public class OrderCompleteTest extends BasePage {
         persInfo.getTermsConditionsCheckbox().click();
         persInfo.getContinueBtn().click();
 
+        OrderFormDelivery formDelivery = new OrderFormDelivery(driver);
+        formDelivery.getAddressField().sendKeys(" N 101 Main Street");
+        formDelivery.getCityField().sendKeys("Houston");
+        Select state = new Select(formDelivery.getStateDropdown());
+        state.selectByVisibleText("Texas");
+        formDelivery.getPostcodeField().sendKeys("55555");
+        formDelivery.getContinueBtn().click();
+
+
     }
 
 }
