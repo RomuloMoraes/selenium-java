@@ -70,6 +70,14 @@ public class OrderCompleteTest extends BasePage {
         formDelivery.getPostcodeField().sendKeys("55555");
         formDelivery.getContinueBtn().click();
 
+        OrderFormShippingMethod shippingMethod = new OrderFormShippingMethod(driver);
+        shippingMethod.getDeliveryMsgTextbox().sendKeys("If I am not in, please leave my delivery on my porch.");
+        shippingMethod.getContinueBtn().click();
+
+        OrderFormPayment formPayment = new OrderFormPayment(driver);
+        formPayment.getPayByWireRadioBtn().click();
+        formPayment.getTermsConditionsCheckbox().click();
+        formPayment.getOrderBtn().click();
 
     }
 
