@@ -12,7 +12,8 @@ public class ShopProductPage {
     By quantityIncrease = By.cssSelector(".touchspin-up");
     By quantityDecrease = By.cssSelector(".touchspin-down");
     By addToCartBtn = By.cssSelector(".add-to-cart.btn.btn-primary");
-    By homePageLink = By.xpath("//span[text()=Home]");
+    By homePageLink = By.cssSelector("ol > li:nth-of-type(1) > a > span");
+    //By homePageLink = By.xpath("//span[text()=Home]");
 
     public ShopProductPage(WebDriver driver) {
         this.driver = driver;
