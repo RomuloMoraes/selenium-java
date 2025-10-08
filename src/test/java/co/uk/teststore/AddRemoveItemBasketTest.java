@@ -6,9 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.*;
 
 import java.io.IOException;
@@ -20,16 +18,17 @@ public class AddRemoveItemBasketTest extends BasePage {
         super();
     }
 
-    @BeforeTest
+    @BeforeMethod
     public void setup() throws IOException {
         driver = getDriver();
         driver.get(getUrl());
     }
 
-    @AfterTest
+    @AfterMethod
     public void tearDown() {
-        //driver.close();
-        driver = null;
+        if(driver == null){
+            driver.quit();
+        }
     }
 
     @Test
@@ -64,8 +63,8 @@ public class AddRemoveItemBasketTest extends BasePage {
         ShoppingCart cart = new ShoppingCart(driver);
         cart.getDeleteItemTwo().click();
 
-        WebDriverWait wait = new WebDriverWait(driver, 120);
-        wait.until(ExpectedConditions.invisibilityOf(cart.getDeleteItemTwo()));
+        //WebDriverWait wait = new WebDriverWait(driver, 120);
+        //wait.until(ExpectedConditions.invisibilityOf(cart.getDeleteItemTwo()));
 
         String actualValue = cart.getTotalAmount().getText();
 

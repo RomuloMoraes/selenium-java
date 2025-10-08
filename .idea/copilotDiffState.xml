@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/testng.xml">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/testng.xml" />
+              <option name="originalContent" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;&#10;&lt;suite name=&quot;TestStore Test Suite&quot;&gt;&#10;    &lt;test name=&quot;TestStore Tests&quot;&gt;&#10;        &lt;classes&gt;&#10;            &lt;class name=&quot;co.uk.teststore.AddRemoveItemBasketTest&quot;/&gt;&#10;            &lt;class name=&quot;co.uk.teststore.OrderCompleteTest&quot;/&gt;&#10;        &lt;/classes&gt;&#10;    &lt;/test&gt;&#10;&lt;/suite&gt;&#10;" />
+              <option name="updatedContent" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;&#10;&lt;suite name=&quot;TestStore Test Suite&quot;&gt;&#10;    &lt;listeners&gt;&#10;        &lt;listener class-name=&quot;org.testng.reporters.XMLReporter&quot; /&gt;&#10;    &lt;/listeners&gt;&#10;    &lt;test name=&quot;TestStore Tests&quot; preserve-order=&quot;true&quot;&gt;&#10;        &lt;classes&gt;&#10;            &lt;class name=&quot;co.uk.teststore.AddRemoveItemBasketTest&quot;/&gt;&#10;            &lt;class name=&quot;co.uk.teststore.OrderCompleteTest&quot;/&gt;&#10;        &lt;/classes&gt;&#10;    &lt;/test&gt;&#10;&lt;/suite&gt;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

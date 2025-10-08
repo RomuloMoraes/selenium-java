@@ -1,0 +1,10 @@
+base\BasePage.class
+pages\OrderFormPayment.class
+pages\ShopContentPanel.class
+pages\ShoppingCart.class
+pages\OrderFormShippingMethod.class
+pages\HomePage.class
+pages\ShopHomePage.class
+pages\ShopProductPage.class
+pages\OrderFormDelivery.class
+pages\OrderFormPersInfo.class
