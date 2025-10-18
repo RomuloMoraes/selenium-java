@@ -1,6 +1,7 @@
 package co.uk.teststore;
 
 import base.BasePage;
+import base.BaseTest;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -12,24 +13,8 @@ import pages.*;
 import java.io.IOException;
 
 
-public class AddRemoveItemBasketTest extends BasePage {
+public class AddRemoveItemBasketTest extends BaseTest {
 
-    public AddRemoveItemBasketTest() throws IOException {
-        super();
-    }
-
-    @BeforeMethod
-    public void setup() throws IOException {
-        driver = getDriver();
-        driver.get(getUrl());
-    }
-
-    @AfterMethod
-    public void tearDown() {
-        if(driver == null){
-            driver.quit();
-        }
-    }
 
     @Test
     public void addRemoveItem() {

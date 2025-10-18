@@ -1,18 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 47.56 s <<< FAILURE! -- in TestSuite
-co.uk.teststore.AddRemoveItemBasketTest.addRemoveItem -- Time elapsed: 12.75 s <<< FAILURE!
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 52.11 s <<< FAILURE! -- in TestSuite
+co.uk.teststore.AddRemoveItemBasketTest.addRemoveItem -- Time elapsed: 12.26 s <<< FAILURE!
 org.openqa.selenium.ElementNotInteractableException: 
 element not interactable
-  (Session info: chrome=140.0.7339.208)
+  (Session info: chrome=141.0.7390.78)
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1c7dbe268a9a2eb097d60c3931e9005b, clickElement {id=f.77F662036F348B964FB702B8E51F8C49.d.40D8970DF2D34F50F78484A099F25D19.e.82}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\ROMULO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60466}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60466/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (1c7dbe268a9a2eb097d60c3931e9005b)] -> css selector: .btn.btn-secondary]
-Session ID: 1c7dbe268a9a2eb097d60c3931e9005b
+Command: [ae745ff019f61324dfc345915200ba88, clickElement {id=f.8275776D3B6E94C8698A89ABB6F2F5E6.d.0D75D1C14C9F96F02E40E4BD96559D63.e.84}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.78, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\ROMULO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50130}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50130/devtoo..., se:cdpVersion: 141.0.7390.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ae745ff019f61324dfc345915200ba88)] -> css selector: .btn.btn-secondary]
+Session ID: ae745ff019f61324dfc345915200ba88
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -27,7 +27,7 @@ Session ID: 1c7dbe268a9a2eb097d60c3931e9005b
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at co.uk.teststore.AddRemoveItemBasketTest.addRemoveItem(AddRemoveItemBasketTest.java:57)
+	at co.uk.teststore.AddRemoveItemBasketTest.addRemoveItem(AddRemoveItemBasketTest.java:42)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,17 +61,17 @@ Session ID: 1c7dbe268a9a2eb097d60c3931e9005b
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-co.uk.teststore.OrderCompleteTest.testCompleteOrder -- Time elapsed: 10.06 s <<< FAILURE!
+co.uk.teststore.OrderCompleteTest.testCompleteOrder -- Time elapsed: 16.99 s <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"link text","selector":"Hummingbird Printed T-Shirt"}
-  (Session info: chrome=140.0.7339.208)
+no such element: Unable to locate element: {"method":"css selector","selector":"form#customer-form > section input[name='email']"}
+  (Session info: chrome=141.0.7390.78)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1c7dbe268a9a2eb097d60c3931e9005b, findElement {value=Hummingbird Printed T-Shirt, using=link text}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\ROMULO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60466}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60466/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c7dbe268a9a2eb097d60c3931e9005b
+Command: [35b88b28d370eac083b476ece5aee65f, findElement {value=form#customer-form > section input[name='email'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.78, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\ROMULO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50164}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50164/devtoo..., se:cdpVersion: 141.0.7390.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 35b88b28d370eac083b476ece5aee65f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -88,8 +88,8 @@ Session ID: 1c7dbe268a9a2eb097d60c3931e9005b
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at pages.ShopHomePage.getProdOne(ShopHomePage.java:26)
-	at co.uk.teststore.OrderCompleteTest.testCompleteOrder(OrderCompleteTest.java:40)
+	at pages.OrderFormPersInfo.getEmailField(OrderFormPersInfo.java:44)
+	at co.uk.teststore.OrderCompleteTest.testCompleteOrder(OrderCompleteTest.java:61)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

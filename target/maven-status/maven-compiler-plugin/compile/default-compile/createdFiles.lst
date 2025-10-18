@@ -1,4 +1,5 @@
 base\BasePage.class
+base\BaseTest.class
 pages\OrderFormPayment.class
 pages\ShopContentPanel.class
 pages\ShoppingCart.class
